@@ -7,11 +7,13 @@
     <title>Document</title>
 
     @vite('resources/css/app.css')
+   
 </head>
 <body>
 
     <!-- component -->
 <style>
+  
     @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
     </style>
 
@@ -23,58 +25,63 @@
         </div>
 
 
-
-        <div class="w-full mx-auto bg-white px-5  text-gray-600 mb-10">
-            <div class="text-center max-w-xl mx-auto ">
-                <h1 class="text-5xl md:text-6xl font-bold mb-14 mt-10">PLANES</h1>
-                {{-- <h3 class="text-xl font-medium mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit repellat dignissimos laboriosam odit accusamus porro</h3> --}}
-            </div>
-            <div class="w-10/12 mx-auto md:flex ">
-                <div class="w-full border  md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
-                    <div class="w-full flex-grow">
-                        <h2 class="text-center font-bold uppercase mb-4 ">BASICO</h2>
-                        <h3 class="text-center font-bold text-4xl mb-5">$620/mes</h3>
-                        <ul class="text-sm px-5 mb-8">
-                            <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> 2 Miembros </li>
-                            <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> 1GB Almacenamiento</li>
-                            {{-- <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> </li> --}}
-                        </ul>
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                <div class="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign In">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <a href="#forgot">Forgot Password?</a>
+                        </div>
                     </div>
-                    <div class="w-full">
-                        <button class="font-bold bg-gray-600 hover:bg-gray-700 text-white rounded-md px-10 py-2 transition-colors w-full">Buy Now</button>
-                    </div>
-                </div>
-
-                <div class="w-full border  md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:-mx-3 md:mb-0 rounded-md shadow-lg shadow-gray-600 md:relative md:z-50 md:flex md:flex-col">
-                    <div class="w-full flex-grow">
-                        <h2 class="text-center font-bold uppercase mb-4">INTERMEDIO</h2>
-                        <h3 class="text-center font-bold text-4xl md:text-5xl mb-5">$1700/semestre</h3>
-                        <ul class="text-sm px-5 mb-8">
-                            <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> 2 Miembros </li>
-                            <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> 1GB Almacenamiento</li>
-                        </ul>
-                    </div>
-                    <div class="w-full">
-                        <button class="font-bold bg-gray-600 hover:bg-gray-700 text-white rounded-md px-10 py-2 transition-colors w-full">Buy Now</button>
-                    </div>
-                </div>
-
-
-                <div class="w-full border md:max-w-none bg-white px-8 md:px-10 py-8 md:py-10 mb-3 mx-auto md:my-6 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
-                    <div class="w-full flex-grow">
-                        <h2 class="text-center font-bold uppercase mb-4">AVANZADO</h2>
-                        <h3 class="text-center font-bold text-4xl mb-5">$6650/año</h3>
-                        <ul class="text-sm px-5 mb-8">
-                            <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> 2 Miembros </li>
-                            <li class="leading-tight"><i class="mdi mdi-check-bold text-lg"></i> 1GB Almacenamiento</li>
-                        </ul>
-                    </div>
-                    <div class="w-full">
-                        <button class="font-bold bg-gray-600 hover:bg-gray-700 text-white rounded-md px-10 py-2 transition-colors w-full">Buy Now</button>
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Repeat Password</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Email Address</label>
+                            <input id="pass" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign Up">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <label for="tab-1">Already Member?</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
 
 
     </div>

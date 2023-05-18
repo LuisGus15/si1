@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('planes');
-})->name('planes');
+    return view('welcome');
+});
 
 
 // Route::get('/plane', function () {
@@ -30,3 +30,13 @@ Route::get('/', function () {
 Route::resource('empleados', EmpleadoController::class)->names('empleados');
 Route::resource('clientes', ClienteController::class)->names('clientes');
 Route::resource('areas', AreaController::class)->names('areas');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

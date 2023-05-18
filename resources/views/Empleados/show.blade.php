@@ -146,7 +146,7 @@
                              <div class=" flex justify-between  ">
                                  <!-- flex justify-between mt-4 lg:w-1/2-->
                                  <button
-                                     class="text-xs  xl:text-xl font-medium text-gray-600 dark:text-gray-400
+                                     class="text-xs  xl:text-xl font-medium text-gray-600
                                  border-2 border-lg border-gray-400 rounded-lg px-2 w-fit"
                                      type="button" id="button_subir_foto">
                                      Subir Foto

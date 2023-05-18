@@ -26,7 +26,7 @@
                         src="{{ asset('img/Logo.png') }}" alt=""
                         loading="lazy"  width="40"/> --}}
                         {{-- <p> HOME -SPRINT 1</p> --}}
-                        <a href="{{ route('planes') }}" >HOME -SPRINT 1 </a>
+                        <a href="{{ route('empleados.index') }}" >Menu </a>
 
                 </div>
             </div>
@@ -64,6 +64,7 @@
                 <span class="  pl-2   ">Area</span>
                 </a>
 
+              
                 {{-- <a href="{{ route('areas.index') }}" id="empresa"
                 class="flex items-center text-sm font-medium  py-2 px-2 hover:bg-gray-500 hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out">
                 <svg class="w-6 h-6 fill-current inline-block" fill="currentColor" viewBox="0 0 20 20"
